@@ -10,6 +10,7 @@ import Team from '~/components/widgets/Team';
 import CallToAction2 from '~/components/widgets/CallToAction2';
 import { callToActionData, content2Data, contentData, featuresData } from '~/shared/data';
 import Contact from '~/components/widgets/Contact';
+import Evaluation from '~/components/widgets/Evaluation';
 
 export default function Page() {
   return (
@@ -25,6 +26,7 @@ export default function Page() {
       <Pricing />
       <Team />
       <Contact />
+      <Evaluation />
       <CallToAction2 {...callToActionData} />
     </>
   );

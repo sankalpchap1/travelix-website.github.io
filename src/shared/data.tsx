@@ -66,41 +66,57 @@ export const announcementData: AnnouncementProps = {
 // Header data
 export const headerData: HeaderProps = {
   links: [
+    // {
+    //   label: 'Pages',
+    //   icon: IconChevronDown,
+    //   links: [
+    //     {
+    //       label: 'Pricing',
+    //       href: '/pricing',
+    //     },
+    //     {
+    //       label: 'Contact',
+    //       href: '/contact',
+    //     },
+    //     {
+    //       label: 'FAQs',
+    //       href: '/faqs',
+    //     },
+    //     {
+    //       label: 'Terms & Conditions',
+    //       href: '/terms',
+    //     },
+    //     {
+    //       label: 'Privacy Policy',
+    //       href: '/privacy',
+    //     },
+    //   ],
+    // },
     {
-      label: 'Pages',
-      icon: IconChevronDown,
-      links: [
-        {
-          label: 'Pricing',
-          href: '/pricing',
-        },
-        {
-          label: 'Contact',
-          href: '/contact',
-        },
-        {
-          label: 'FAQs',
-          href: '/faqs',
-        },
-        {
-          label: 'Terms & Conditions',
-          href: '/terms',
-        },
-        {
-          label: 'Privacy Policy',
-          href: '/privacy',
-        },
-      ],
+      label: 'Introduction',
+      href: '/introduction',
     },
     {
-      label: 'Blog',
-      href: '/blog',
+      label: 'Methodology',
+      href: '/methodology',
     },
+    {
+      label: 'Evaluation',
+      href: '/evaluation',
+    },
+    {
+      label: 'Conclusion',
+      href: '/conclusion',
+    },
+    {
+      label: 'Team',
+      href: '/team',
+    }
   ],
   actions: [
     {
-      label: 'Download',
-      href: 'https://github.com/onwidget/tailnext',
+      label: 'Visit Travelix',
+      href: 'https://travelix2.herokuapp.com/',
       type: 'primary',
     },
   ],
@@ -614,11 +630,11 @@ export const teamData: TeamProps = {
   },
   teams: [
     {
-      name: 'Cindy Belcher',
-      occupation: 'SEO Consultant',
+      name: 'Sankalp Chapalgaonkar',
+      occupation: 'Technical Architect',
       image: {
         src: 'https://images.unsplash.com/photo-1637858868799-7f26a0640eb6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
-        alt: 'Cindy Belcher',
+        alt: 'Sankalp Chapalgaonkar',
       },
       items: [
         {
@@ -639,11 +655,11 @@ export const teamData: TeamProps = {
       ],
     },
     {
-      name: 'Toby Foster',
-      occupation: 'Marketing Tech',
+      name: 'Divyansh Bokadia',
+      occupation: 'SEO Specialist',
       image: {
         src: 'https://images.unsplash.com/photo-1614583224978-f05ce51ef5fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2172&q=80',
-        alt: 'Toby Foster',
+        alt: 'Divyansh Bokadia',
       },
       items: [
         {
@@ -664,11 +680,11 @@ export const teamData: TeamProps = {
       ],
     },
     {
-      name: 'Clark Bourne',
-      occupation: 'Content Manager',
+      name: 'Rishabh Bassi',
+      occupation: 'Chief Everything Officer',
       image: {
         src: 'https://images.unsplash.com/photo-1639628735078-ed2f038a193e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80',
-        alt: 'Clark Bourne',
+        alt: 'Rishabh Bassi',
       },
       items: [
         {
@@ -689,11 +705,11 @@ export const teamData: TeamProps = {
       ],
     },
     {
-      name: 'Bella Chase',
-      occupation: 'UX Designer',
+      name: 'Anshul Sharma',
+      occupation: 'Machine Learning Specialist',
       image: {
         src: 'https://images.unsplash.com/photo-1628260412297-a3377e45006f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80',
-        alt: 'Bella Chase',
+        alt: 'Anshul Sharma',
       },
       items: [
         {
@@ -934,6 +950,59 @@ export const comparisonData: ComparisonProps = {
       },
     },
   ],
+};
+
+// Contact data
+export const evaluationData: ContactProps = {
+  header: {
+    title: 'Get in Touch',
+    subtitle: 'In hac habitasse platea dictumst',
+    highlight: 'Contact',
+  },
+  content:
+    'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis nec ipsum orci. Ut scelerisque sagittis ante, ac tincidunt sem venenatis ut.',
+  items: [
+    {
+      title: 'Our Address',
+      description: ['1230 Maecenas Street Donec Road', 'New York, EEUU'],
+      icon: IconMapPin,
+    },
+    {
+      title: 'Contact',
+      description: ['Mobile: +1 (123) 456-7890', 'Mail: tailnext@gmail.com'],
+      icon: IconPhoneCall,
+    },
+    {
+      title: 'Working hours',
+      description: ['Monday - Friday: 08:00 - 17:00', 'Saturday & Sunday: 08:00 - 12:00'],
+      icon: IconClock,
+    },
+  ],
+  form: {
+    title: 'Ready to Get Started?',
+    inputs: [
+      {
+        type: 'text',
+        name: 'name',
+        placeholder: 'Your name',
+      },
+      {
+        type: 'email',
+        name: 'email',
+        placeholder: 'Your email address',
+      },
+    ],
+    textarea: {
+      cols: 30,
+      rows: 5,
+      name: 'textarea',
+      placeholder: 'Write your message...',
+    },
+    btn: {
+      title: 'Send Message',
+      type: 'submit',
+    },
+  },
 };
 
 // Contact data
