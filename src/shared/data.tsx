@@ -130,20 +130,18 @@ export const headerData: HeaderProps = {
 export const heroData: HeroProps = {
   title: (
     <>
-      Free template for <span className="hidden md:inline">starts a website using</span> <span>Next.js</span> +{' '}
-      <span className="sm:whitespace-nowrap">Tailwind CSS</span>
+      Personalized Recommendation System that is one stop solution for user’s travel needs.
     </>
   ),
   subtitle: (
     <>
       <span className="hidden md:inline">
         <span className="font-semibold underline decoration-primary-600 decoration-wavy decoration-1 underline-offset-2">
-          TailNext
+          Travelix
         </span>{' '}
-        is a production ready template to start your new website using <em>Next.js</em> + <em>Tailwind CSS</em>.
+        is a personalized travel recommendation system that provides recommendations to users based on their <em>preferences</em> and <em>travel history</em>.
       </span>{' '}
-      It has been designed following Best Practices, SEO, Accessibility, Dark Mode, great Page Speed, image
-      optimization.
+      The tool will analyze user preferences and destination data (granular to State level) to recommend Restaurents, Hotels and Nightlife that match the user's preferences.
     </>
   ),
   callToAction: {

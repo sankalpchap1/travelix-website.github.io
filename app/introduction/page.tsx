@@ -1,12 +1,11 @@
-import Evaluation from '~/components/widgets/Evaluation';
-import Features2 from '~/components/widgets/Features2';
-import { featuresData2 } from '~/shared/data';
+import { content2Data, contentData } from '~/shared/data';
+import Content from '~/components/widgets/Content';
 
 const Page = () => {
   return (
     <>
-      <Evaluation />
-      <Features2 {...featuresData2} />
+      <Content {...contentData} />
+      <Content {...content2Data} />
     </>
   );
 };

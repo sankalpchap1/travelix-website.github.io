@@ -1,4 +1,5 @@
 # travelix-website.github.io
+
 Travelix Report Website
 
 ## Getting started
@@ -92,7 +93,7 @@ prefer.
 
 Clone this repository on own GitHub account and deploy to Netlify:
 
-[![Netlify Deploy button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/onwidget/tailnext.git)
+[![Netlify Deploy button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/sankalpchap1/travelix-website.github.io.git)
 
 #### Deploy to Vercel
 
