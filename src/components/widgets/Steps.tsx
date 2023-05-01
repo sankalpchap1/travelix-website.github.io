@@ -47,9 +47,10 @@ const Steps = () => {
         <div className="relative">
           {image && (
             <Image
+            style={{maxWidth: 800, maxHeight:400, verticalAlign: "middle"}}
               src={image.src}
-              width={400}
-              height={768}
+              // width={200}
+              // height={500}
               alt={image.alt}
               className="inset-0 w-full rounded-md bg-gray-500 object-cover object-top shadow-lg dark:bg-slate-700 md:absolute md:h-full"
             />

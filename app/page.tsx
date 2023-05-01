@@ -6,8 +6,7 @@ import Testimonial from '~/components/widgets/Testimonial';
 import FAQs2 from '~/components/widgets/FAQs2';
 import Pricing from '~/components/widgets/Pricing';
 import CallToAction2 from '~/components/widgets/CallToAction2';
-import { callToActionData, featuresData } from '~/shared/data';
-import Contact from '~/components/widgets/Contact';
+import { featuresData } from '~/shared/data';
 
 export default function Page() {
   return (
@@ -19,8 +18,6 @@ export default function Page() {
       <Testimonial />
       <FAQs2 />
       <Pricing />
-      <Contact />
-      <CallToAction2 {...callToActionData} />
     </>
   );
 }

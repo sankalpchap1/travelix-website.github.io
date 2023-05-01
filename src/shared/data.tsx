@@ -44,7 +44,7 @@ import {
 import cameraFrontImg from '~/assets/images/camera-front.jpg';
 import cameraBackImg from '~/assets/images/camera-back.jpg';
 import mainPage from '~/assets/images/mainpage.png';
-import gasImg from '~/assets/images/gas.jpg';
+import gasImg from '~/assets/images/newuser.png';
 import pythonLogo from '~/assets/images/python-logo.png';
 import reactLogo from '~/assets/images/react-logo.png';
 import tensorflowlogo from '~/assets/images/tensorflow.png';
@@ -179,35 +179,30 @@ export const socialProofData: SocialProofProps = {
 export const faqsData: FAQsProps = {
   header: {
     title: 'Frequently Asked Questions',
-    subtitle:
-      'Duis turpis dui, fringilla mattis sem nec, fringilla euismod neque. Morbi tincidunt lacus nec tortor scelerisque pulvinar.',
     highlight: 'FAQS',
   },
   items: [
     {
-      title: 'What do I need to start?',
-      description: `Nunc mollis tempor quam, non fringilla elit sagittis in. Nullam vitae consectetur mi, a elementum arcu. Sed laoreet, ipsum et vehicula dignissim, leo orci pretium sem, ac condimentum tellus est quis ligula.`,
+      title: 'What is Travelix?',
+      description: `Travelix is a personalized travel recommendation system that provides
+      recommendations to users based on their preferences, budget, and travel history. The
+      tool will analyze user preferences and destination data to
+      recommend destinations and hotels that match the user's preferences.`,
     },
     {
-      title: 'How to install the NextJS + Tailwind CSS template?',
-      description: `Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer eleifend vestibulum nisl in iaculis. Mauris dictum ac purus vestibulum auctor. Praesent imperdiet lectus et massa faucibus, quis viverra massa rhoncus.`,
+      title: 'Why is it needed?',
+      description: `Recommendation systems in the field of travel and tourism domain are very less
+      compared to other domains. By using Travelix, users can save time and effort in
+      researching and planning their travel itinerary`,
     },
     {
-      title: "What's something that you completely don't understand?",
-      description: `Mauris vitae eros a dui varius luctus. Suspendisse rutrum, sapien nec blandit bibendum, justo sapien sollicitudin erat, id aliquam sapien purus quis leo. Aliquam vulputate vestibulum consectetur.`,
+      title: "Which dataset has been used?",
+      description: `Yelp dataset containing 150K businesses and 1.9 million users with 7 million reviews has been used to train the model.`,
     },
     {
-      title: "What's an example of when you changed your mind?",
-      description: `Nunc dapibus lacinia ipsum ut elementum. Integer in pretium sapien. Ut pretium nisl mauris, ut rutrum justo condimentum id. Etiam aliquet, arcu at iaculis laoreet, est arcu egestas sapien, eget sollicitudin odio orci et nunc.`,
-    },
-    {
-      title: 'What is something that you would really like to try again?',
-      description: `Duis in maximus mauris, id eleifend mauris. Nam a fringilla arcu. Curabitur convallis, tellus non aliquet rhoncus, lacus massa auctor eros, in interdum lectus augue sed augue. Fusce tempor ex id faucibus efficitur.`,
-    },
-    {
-      title: 'If you could only ask one question to each person you meet, what would that question be?',
-      description: `Nullam imperdiet sapien tincidunt erat dapibus faucibus. Vestibulum a sem nec lorem imperdiet scelerisque non sed lacus. Ut pulvinar id diam vitae auctor. Nam tempus, neque et elementum consectetur, ex ipsum pulvinar risus, vel sodales ligula tortor eu eros.`,
-    },
+      title: "What are the core algorithms used?",
+      description: `NPR, Matrix Factorization along with Auto Encoder with Colloborative Filtering has been used to build the model`,
+    }
   ],
 };
 
@@ -352,45 +347,7 @@ export const faqs4Data: FAQsProps = {
   ],
 };
 
-// CallToAction data
-export const callToActionData: CallToActionProps = {
-  title: 'Next.js + Tailwind CSS',
-  subtitle:
-    'Aliquam sodales porttitor lacus ac tristique. Etiam posuere elit at leo feugiat sodales. Sed ac mauris quis sem tempor condimentum non at metus.',
-  callToAction: {
-    text: 'Get template',
-    href: 'https://github.com/onwidget/tailnext',
-    icon: IconDownload,
-  },
-  items: [
-    {
-      title: 'Get template',
-      description: 'Aliquam sodales est lectus, quis.',
-      href: 'https://github.com/onwidget/tailnext',
-    },
-    {
-      title: 'Learn more',
-      description: 'Class aptent taciti sociosqu ad litora torquent per conubia.',
-      href: '/',
-    },
-    {
-      title: 'Subscribe',
-      description: 'Morbi orci nunc, euismod ac dui id, convallis.',
-      form: {
-        icon: IconMail,
-        input: {
-          type: 'email',
-          name: 'email',
-          placeholder: 'Enter your email address',
-        },
-        btn: {
-          title: 'Subscribe',
-          type: 'submit',
-        },
-      },
-    },
-  ],
-};
+
 
 // CallToAction2 data
 export const callToActionData2: CallToActionProps = {
@@ -593,24 +550,24 @@ export const content3Data: ContentProps = {
 
 // Steps data
 export const stepsData: StepsProps = {
-  title: 'Sed ac magna sit amet risus tristique interdum. hac.',
+  title: 'Get Started',
   items: [
     {
       title: 'Step 1',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla. Praesent placerat enim ut ex tincidunt vehicula. Fusce sit amet dui tellus.',
+        'New users should choose the states and categories for which they\'re interested in. Click on submit ',
       icon: IconArrowDown,
     },
     {
       title: 'Step 2',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla.',
+        'NPR Results based on the new user is shown which includes recommendations for accommodations, restaurants etc.. The user can navigate to different states and categories using the dropdown.',
       icon: IconArrowDown,
     },
     {
       title: 'Step 3',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla.',
+        'Existing users can navigate to different states and categories using the dropdown and are shown recommendations based on their travel history and preferences.',
       icon: IconArrowDown,
     },
     {
@@ -621,7 +578,7 @@ export const stepsData: StepsProps = {
   image: {
     src: gasImg,
     alt: 'Steps image',
-  },
+  }
 };
 
 // Team data
@@ -740,17 +697,15 @@ export const teamData: TeamProps = {
 // Testimonial data
 export const testimonialData: TestimonialProps = {
   header: {
-    title: 'What our customers say about us',
-    subtitle:
-      'Etiam sed odio et dolor auctor gravida. Curabitur tincidunt elit non risus pharetra sodales. Etiam sit amet mattis massa.',
+    title: 'What our customers say about us'
     // highlight: 'Testimonial',
   },
   testimonials: [
     {
-      name: 'Tayla Kirsten',
-      occupation: 'Marketing Manager',
+      name: 'Dylan Nguyen',
+      occupation: 'Travel enthusiast',
       comment:
-        'Suspendisse mollis ante turpis, ut fermentum nulla finibus ac. Integer ut justo id dolor lobortis pharetra. Integer ultrices leo a nunc ullamcorper commodo. In id nulla et nibh pretium pretium non vel metus. Suspendisse dapibus quis lorem sit amet fermentum. Ut a dapibus justo. In faucibus molestie pretium. Cras eros orci, bibendum fringilla elit at, vehicula maximus eros. Aenean placerat aliquet mi, et pellentesque dolor gravida at.',
+        'Appealing tool and highly personalized using user preferences and destination data. Quite excited!!',
       image: {
         src: 'https://images.unsplash.com/photo-1619734086067-24bf8889ea7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
         alt: '',
@@ -759,10 +714,10 @@ export const testimonialData: TestimonialProps = {
       href: '#',
     },
     {
-      name: 'Silver Jordan',
-      occupation: 'Senior Marketer',
+      name: 'Shurui Hui ',
+      occupation: 'Student',
       comment:
-        'Mauris semper enim dolor, ac dictum sapien sollicitudin quis. Quisque id pharetra mi. Phasellus eu posuere lectus, vitae rhoncus velit. Nullam imperdiet purus quis dapibus vestibulum. Integer purus ex, hendrerit at elementum non, varius a nibh. Ut eget convallis mi. Morbi mattis, felis sit amet consectetur scelerisque, odio purus ornare sapien, in feugiat lorem tellus et magna. Pellentesque luctus dolor in ornare mattis.',
+        'Game changer! Go-to resource for travelers worlwide! Stands out from the competition! Highly recommend!',
       image: {
         src: 'https://images.unsplash.com/photo-1565049786474-1dea82a8b995?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
         alt: '',
@@ -771,10 +726,10 @@ export const testimonialData: TestimonialProps = {
       href: '#',
     },
     {
-      name: 'Kelsey Arden',
-      occupation: 'Co-Founder & CEO',
+      name: 'Prof Caverlee',
+      occupation: 'Project Guide',
       comment:
-        'Sed malesuada rhoncus arcu, sit amet condimentum leo pharetra feugiat. In augue quam, venenatis nec dui in, auctor tempus libero. Aliquam tempus ex id metus viverra blandit. Proin varius venenatis tortor, a pellentesque enim malesuada a. Aliquam lectus magna, interdum eget odio non, consequat imperdiet ipsum.',
+        'Interesting project. Make sure to preprocess the data to improve the quality of your recommendations',
       image: {
         src: 'https://images.unsplash.com/photo-1659057106920-da022cfbc0cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
         alt: '',
@@ -789,8 +744,6 @@ export const testimonialData: TestimonialProps = {
 export const pricingData: PricingProps = {
   header: {
     title: 'Prices for each plan',
-    subtitle:
-      'Proin eget vestibulum sem, vel ultrices ligula. Vestibulum in eleifend lectus, non mollis odio. Donec nibh ipsum, suscipit non pulvinar quis, lobortis ac lorem.',
     // highlight: 'Pricing',
   },
   prices: [
@@ -799,10 +752,6 @@ export const pricingData: PricingProps = {
       value: 29,
       period: 'per month',
       texts: [
-        'Etiam in libero',
-        'Aenean ac nunc',
-        'Cras scelerisque accumsan libero, et volutpat dolor tristique at',
-        'In hac habitasse',
       ],
       link: {
         label: 'Free 7-day trial',
@@ -814,7 +763,6 @@ export const pricingData: PricingProps = {
       title: 'standard',
       value: 69,
       period: 'per month',
-      texts: ['Proin vel laoreet', 'Ut efficitur egestas', 'Pellentesque ut nibh', 'Donec fringilla sem'],
       link: {
         label: 'Free 15-day trial',
         href: '#',
@@ -826,12 +774,7 @@ export const pricingData: PricingProps = {
       title: 'premium',
       value: 199,
       period: 'per month',
-      texts: [
-        'Curabitur suscipit risus',
-        'Aliquam blandit malesuada',
-        'Suspendisse sit amet',
-        'Suspendisse auctor dui',
-      ],
+
       link: {
         label: 'Free 30-day trial',
         href: '#',
