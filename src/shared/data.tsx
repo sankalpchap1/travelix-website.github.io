@@ -43,12 +43,11 @@ import {
 
 import cameraFrontImg from '~/assets/images/camera-front.jpg';
 import cameraBackImg from '~/assets/images/camera-back.jpg';
-import heroImg from '~/assets/images/hero.jpg';
+import mainPage from '~/assets/images/mainpage.png';
 import gasImg from '~/assets/images/gas.jpg';
-import nextJsLogo from '~/assets/images/nextjs-logo.png';
+import pythonLogo from '~/assets/images/python-logo.png';
 import reactLogo from '~/assets/images/react-logo.png';
-import tailwindCssLogo from '~/assets/images/tailwind-css-logo.png';
-import typescriptLogo from '~/assets/images/typescript-logo.png';
+import tensorflowlogo from '~/assets/images/tensorflow.png';
 
 // Announcement data
 export const announcementData: AnnouncementProps = {
@@ -130,7 +129,7 @@ export const headerData: HeaderProps = {
 export const heroData: HeroProps = {
   title: (
     <>
-      Personalized Recommendation System that is one stop solution for user’s travel needs.
+      Personalized Recommendation System - One stop solution for travel needs.
     </>
   ),
   subtitle: (
@@ -145,17 +144,16 @@ export const heroData: HeroProps = {
     </>
   ),
   callToAction: {
-    text: 'Get template',
-    href: 'https://github.com/onwidget/tailnext',
-    icon: IconDownload,
+    text: 'Visit Travelix',
+    href: 'https://travelix2.herokuapp.com/'
   },
   callToAction2: {
     text: 'Learn more',
-    href: '/',
+    href: '/introduction',
   },
   image: {
-    src: heroImg,
-    alt: 'Hero TailNext',
+    src: mainPage,
+    alt: 'Main Page',
   },
 };
 
@@ -163,20 +161,16 @@ export const heroData: HeroProps = {
 export const socialProofData: SocialProofProps = {
   images: [
     {
-      src: nextJsLogo,
-      alt: 'NextJs Logo',
+      src: pythonLogo,
+      alt: 'Python Logo',
     },
     {
       src: reactLogo,
       alt: 'React Logo',
     },
     {
-      src: tailwindCssLogo,
-      alt: 'Tailwind CSS Logo',
-    },
-    {
-      src: typescriptLogo,
-      alt: 'Typescript Logo',
+      src: tensorflowlogo,
+      alt: 'Tensorflow Logo',
     },
   ],
 };
@@ -414,73 +408,49 @@ export const featuresData: FeaturesProps = {
   header: {
     title: (
       <>
-        What you get with <span className="whitespace-nowrap">TailNext</span>
+        What you get with <span className="whitespace-nowrap">Travelix</span>
       </>
     ),
     subtitle:
-      'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque ipsa quae.',
+      '',
     highlight: 'Features',
   },
   items: [
     {
-      title: 'Next.Js + Tailwind CSS Integration',
+      title: 'Personalised Recommendations',
       description:
-        'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
-      icon: IconBrandTailwind,
-      link: {
-        label: 'Discover now',
-        href: '/',
-      },
+        'Recommendations based on travel history and user preferences, which uses Matrix Factorization, combination of Auto Encoder and colloborative filtering techniques',
+      icon: IconBrandTailwind
     },
     {
-      title: 'Ready-to-use Components',
+      title: 'Data-driven recommendations',
       description:
-        'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
-      icon: IconComponents,
-      link: {
-        label: 'Discover now',
-        href: '/',
-      },
+        'Uses Yelp Dataset to provide trustworthy recommendations that are accurate and reliable',
+      icon: IconComponents
     },
     {
-      title: 'Best Practices',
+      title: 'Complete Itinerary',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
-      icon: IconListCheck,
-      link: {
-        label: 'Discover now',
-        href: '/',
-      },
+        'Provides a complete travel itinerary, including hotels, travel, restaurants and events to save users time and effort in researching and planning their trip',
+      icon: IconListCheck
     },
     {
-      title: 'Excellent Page Speed',
+      title: 'User-friendly interface',
       description:
-        'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
-      icon: IconRocket,
-      link: {
-        label: 'Discover now',
-        href: '/',
-      },
+        'Boasts an intuitive user interface inspired by Netflix, enabling a seamless user experience alon with live fetching of business logos from Google to enhance the visual appeal of our recommendations',
+      icon: IconRocket
     },
     {
-      title: 'Search Engine Optimization (SEO)',
+      title: 'Trending Recommendations',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
-      icon: IconArrowsRightLeft,
-      link: {
-        label: 'Discover now',
-        href: '/',
-      },
+        'Recommend trending places to visit right now, which will attract users who are looking for popular and trendy destinations',
+      icon: IconArrowsRightLeft
     },
     {
-      title: 'Open to new ideas and contributions',
+      title: 'Collaborative filtering & Auto Encoder',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
-      icon: IconBulb,
-      link: {
-        label: 'Discover now',
-        href: '/',
-      },
+        'Tool uses advanced technqiues of Auto Encoder and Collaborative Filtering techniques to offer the most relevant recommendations to our users',
+      icon: IconBulb
     },
   ],
 };
