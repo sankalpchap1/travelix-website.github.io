@@ -492,27 +492,27 @@ export const featuresData2: FeaturesProps = {
 // Content data
 export const contentData: ContentProps = {
   header: {
-    title: 'Aliquip definiebas ad est',
-    subtitle: 'Quando cetero his ne, eum admodum sapientem ut',
-    highlight: 'Content',
+    title: 'Motivation Behind Travelix',
+    subtitle: ' Need for Personalized Travel Recommendation Systems plus no existing solutions as of now gives rise to Travelix. Travelix would be useful for people who are looking for personalized travel recommendations that match their interests and budget and could be used by travel enthusiasts, families, couples, and anyone else who wants to plan a trip. Moreover, personalized recommendations help travelers discover new places and activities that they might have otherwise missed. By taking into account a user\'s travel history, Travelix can suggest destinations that the user may not have considered before, opening up new possibilities for travel experiences. Overall, the motivation behind Travelix is to create a tool that simplifies travel planning, saves time and effort, and provides personalized recommendations that help travelers make the most of their trips. Travelix aims to solve this problem by using advanced recommendation algorithms that analyze user preferences, travel history, and destination data to provide personalized travel recommendations. ',
+    highlight: 'Introduction',
   },
   content:
-    'Ne dicta praesent ocurreret has, diam theophrastus at pro. Eos etiam regione ut, persius eripuit quo id. Sit te euismod tacimates.',
+    ' ',
   items: [
     {
-      title: 'Per ei quaeque sensibus',
+      title: 'Personalized Recommendation System',
       description:
-        'Ex usu illum iudico molestie. Pro ne agam facete mediocritatem, ridens labore facete mea ei. Pro id apeirian dignissim.',
+        ' In today\'s time of destination weddings and annual vacationt rips, there is utmost need for Travelix.  Recommendation systems in the field of travel and tourism domain are very less compared to other domains.',
     },
     {
-      title: 'Cu imperdiet posidonium sed',
+      title: 'No Existing Solutions',
       description:
-        'Amet utinam aliquando ut mea, malis admodum ocurreret nec et, elit tibique cu nec. Nec ex maluisset inciderint, ex quis.',
+        ' Traditional travel planning involves a lot of research and effort to find destinations, accommodations, and activities that match the traveler preferences and budget. Some tools such as TripAdvisor and Expedia do not offer any level of personalization for users. Infact they are just search based web engines.',
     },
     {
-      title: 'Nulla omittam sadipscing mel ne',
+      title: 'Travelix',
       description:
-        'At sed possim oporteat probatus, justo graece ne nec, minim commodo legimus ut vix. Ut eos iudico quando soleat, nam modus.',
+        ' By offering a one-stop solution for all travel needs, including flights, accommodations, restaurants, events, and attractions, Travelix makes it easy for travelers to plan their trips without the need for extensive research.',
     },
   ],
   image: {
@@ -525,27 +525,63 @@ export const contentData: ContentProps = {
 
 // Content2 data
 export const content2Data: ContentProps = {
+  header: {
+    title: 'Introduction',
+    subtitle: ' Travelix is a personalized travel recommendation system designed to provide customized recommendations to users based on their preferences, budget, and travel history. Overall, the Travelix tool aims to simplify the process of planning a trip, providing users with personalized travel recommendations based on their interests and budget. It is a novel tool that fills a gap in the market by offering a personalized approach to travel recommendations. In this report, we will present the details of the Travelix Product, including its features, target users, the challenges encountered during development, and the methodology used to build the tool. Additionally, we will discuss the data sources used for the development of the tool and finally, we will demonstrate the usefulness of Travelix by evaluating our system and conducting user testing and providing feedback on the results obtained from the system.',
+    
+  },
   content:
-    'Per odio fabellas consulatu cu. Utroque detracto mel ea, quo te latine theophrastus. Ea his tale nib dissentias, mei exerci tamquam euripidis cu.',
+    '',
   items: [
     {
-      title: 'Per ei quaeque sensibus',
+      title: 'A User Interface similar to Netflix for Travel Needs. Live loading of Images of hotels and places along with seamless smooth User Expereince.'
     },
     {
-      title: 'Cu imperdiet posidonium sed',
+      title: 'Travelix 3 Fold Recommender System : Non-personalized recommendations,  Personalized recommendations, Using Matrix Factorization, AutoEncoder + Collaborative Filtering.',
     },
     {
-      title: 'Nulla omittam sadipscing mel ne',
+      title: 'One stop solution for user’s travel needs. Using Yelp Dataset for establishing the user business ratings matrix, covering 2M users and around 150K businesses.',
+    },
+
+
+  ],
+  image: {
+    src: cameraBackImg,
+    alt: 'Colorful Image',
+  },
+  isReversed: true,
+  isAfterContent: true,
+};
+
+export const content3Data: ContentProps = {
+  header: {
+    title: 'Introduction',
+    subtitle: ' Travelix is a personalized travel recommendation system designed to provide customized recommendations to users based on their preferences, budget, and travel history. The tool is developed by Dream Team of 4  of the Information Storage and Retrieval course at Texas A&M University, under the guidance of Professor James Caverlee. The project aims to create a one-stop solution for travelers, allowing them to plan their itinerary efficiently and save time in researching and planning their travel arrangements. In this report, we will present the details of the Travelix tool, including its functions, target users, the challenges encountered during development, and the methodology used to build the tool. Additionally, we will discuss the data sources used for the development of the tool and provide a timeline of our project plan. Finally, we will demonstrate the usefulness of Travelix by conducting user testing and providing feedback on the results obtained from the system.',
+    
+  },
+  content:
+    '',
+  items: [
+    {
+      title: 'The tool will analyze user preferences and destination data (granular to City level) to recommend destinations and hotels that match the user\'s preferences along with complete possible itinerary such as flights, restaurants, events and attractions.. The Travelix tool analyzes user preferences and destination data, down to the city level, to provide recommendations for hotels, flights, restaurants, events, and attractions that match the user\'s interests and budget. The recommendations are generated using various recommendation techniques such as Content-Based Filtering and User-User Collaborative Filtering algorithms.',
     },
     {
-      title: 'Per ei quaeque sensibus',
+      title: 'Overall, the Travelix tool aims to simplify the process of planning a trip, providing users with personalized travel recommendations based on their interests and budget. It is a novel tool that fills a gap in the market by offering a personalized approach to travel recommendations.',
     },
     {
-      title: 'Cu imperdiet posidonium sed',
+      title: 'Due to the sparsity of the data available which includes reviews and ratings from travelers it is difficult to build personalized recommendations for the above use case.. It can be challenging to build such a tool because it requires a large amount of data and a complex algorithm.',
     },
     {
-      title: 'Nulla omittam sadipscing mel ne',
+      title: 'A User Interface similar to Netflix for Travel Needs.'
     },
+    {
+      title: 'Travelix provides three different kinds of recommendations as follows : Non-personalized recommendations : Recommend trending places to visit right now, Personalized recommendations, Using Matrix Factorization, AutoEncoder (Addressing the sparsity of data) + Collaborative Filtering ',
+    },
+    {
+      title: 'Hence, Travelix will be a one stop solution for user’s travel needs. We are using the Yelp data set for establishing the user business ratings matrix, covering 2M users and around 150K businesses.       ',
+    },
+
+
   ],
   image: {
     src: cameraBackImg,
@@ -593,9 +629,10 @@ export const teamData: TeamProps = {
   header: {
     title: 'Team Members',
     subtitle:
-      'Suspendisse in dui nibh. Donec enim leo, sodales et egestas id, malesuada non diam. Sed dapibus velit et mauris condimentum, vel imperdiet erat egestas.',
+      'The tool is developed by Dream Team RADS of 4 of the Information Storage and Retrieval course at Texas A&M University, under the guidance of Professor James Caverlee.',
     // highlight: 'Team',
   },
+  
   teams: [
     {
       name: 'Sankalp Chapalgaonkar',
@@ -608,17 +645,17 @@ export const teamData: TeamProps = {
         {
           title: 'Know more on Twitter',
           icon: IconBrandTwitter,
-          href: '#',
+          href: 'https://twitter.com/sankalpchap1',
         },
         {
           title: 'Know more on Linkedin',
           icon: IconBrandLinkedin,
-          href: '#',
+          href: 'https://www.linkedin.com/in/sankalp-chapalgaonkar/',
         },
         {
           title: 'Contact by email',
           icon: IconMail,
-          href: '#',
+          href: 'mailto:sankalpchap1@gmail.com',
         },
       ],
     },
@@ -633,17 +670,17 @@ export const teamData: TeamProps = {
         {
           title: 'Know more on Twitter',
           icon: IconBrandTwitter,
-          href: '#',
+          href: 'https://twitter.com/Divyanshbokadia',
         },
         {
           title: 'Know more on Linkedin',
           icon: IconBrandLinkedin,
-          href: '#',
+          href: 'https://www.linkedin.com/in/divyansh-bokadia/',
         },
         {
           title: 'Contact by email',
           icon: IconMail,
-          href: '#',
+          href: 'mailto:dbokadia@gmail.com',
         },
       ],
     },
@@ -658,17 +695,17 @@ export const teamData: TeamProps = {
         {
           title: 'Know more on Twitter',
           icon: IconBrandTwitter,
-          href: '#',
+          href: 'https://twitter.com/bassi_rishabh',
         },
         {
           title: 'Know more on Linkedin',
           icon: IconBrandLinkedin,
-          href: '#',
+          href: 'https://www.linkedin.com/in/rishabh-bassi/',
         },
         {
           title: 'Contact by email',
           icon: IconMail,
-          href: '#',
+          href: 'mailto:bassirishabh@gmail.com',
         },
       ],
     },
@@ -683,17 +720,17 @@ export const teamData: TeamProps = {
         {
           title: 'Know more on Twitter',
           icon: IconBrandTwitter,
-          href: '#',
+          href: 'https://twitter.com/sharma_anshul18',
         },
         {
           title: 'Know more on Linkedin',
           icon: IconBrandLinkedin,
-          href: '#',
+          href: 'https://www.linkedin.com/in/anshulsharma18/',
         },
         {
           title: 'Contact by email',
           icon: IconMail,
-          href: '#',
+          href: 'mailto:ianshulvsharma.96@gmail.com',
         },
       ],
     },
@@ -1271,31 +1308,31 @@ export const footerData2: FooterProps = {
   columns: [
     {
       title: 'Address',
-      texts: ['51 Phasellus Avenue Maecenas', 'Aliquam, AQ 52098'],
+      texts: ['Texas A&M University', 'College Station, TX 77802'],
     },
     {
       title: 'Phone',
-      texts: ['Reception: +105 123 4567', 'Office: +107 235 7890'],
+      texts: ['Reception: +1 123 4567', 'Office: +1 123 4567'],
     },
     {
       title: 'Email',
-      texts: ['Office: info@example.com', 'Site: https://example.com'],
+      texts: ['Office: bassirishabh@gmail.com', 'Site: https://travelix2.herokuapp.com/'],
     },
   ],
   socials: [
-    { label: 'Twitter', icon: IconBrandTwitter, href: '#' },
-    { label: 'Instagram', icon: IconBrandInstagram, href: '#' },
-    { label: 'Facebook', icon: IconBrandFacebook, href: '#' },
-    { label: 'RSS', icon: IconRss, href: '#' },
-    { label: 'Github', icon: IconBrandGithub, href: 'https://github.com/onwidget/tailnext' },
+    { label: 'Twitter', icon: IconBrandTwitter, href: 'https://twitter.com/bassi_rishabh' },
+    { label: 'Instagram', icon: IconBrandInstagram, href: 'https://www.linkedin.com/in/rishabh-bassi/' },
+    { label: 'Facebook', icon: IconBrandFacebook, href: 'https://www.linkedin.com/in/rishabh-bassi/' },
+    { label: 'RSS', icon: IconRss, href: 'https://twitter.com/bassi_rishabh' },
+    { label: 'Github', icon: IconBrandGithub, href: 'https://github.com/sankalpchap1/travelix-website.github.io' },
   ],
   footNote: (
     <div className="mr-4 text-sm dark:text-slate-400">
       <span className="float-left mr-1.5 h-5 w-5 rounded-sm bg-[url(https://onwidget.com/favicon/favicon-32x32.png)] bg-cover md:-mt-0.5 md:h-6 md:w-6"></span>
       Made by{' '}
-      <a className="text-blue-600 hover:underline dark:text-gray-200" href="https://onwidget.com/">
+      <a className="text-blue-600 hover:underline dark:text-gray-200" href="https://github.com/sankalpchap1/travelix-website.github.io">
         {' '}
-        onWidget
+        RADS 
       </a>{' '}
       · All rights reserved.
     </div>

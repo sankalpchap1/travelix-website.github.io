@@ -36,8 +36,9 @@ const Content = ({ header, content, items, image, isReversed, isAfterContent }: 
           </div>
           <div aria-hidden="true" className="mt-10 md:mt-0 md:basis-1/2">
             {image && (
-              <div className="relative m-auto max-w-4xl">
+              <div className="relative m-auto max-w-4xl" style ={{paddingTop : 40}}>
                 <Image
+                  style={{maxWidth : 500}}
                   src={image.src}
                   width={500}
                   height={500}
