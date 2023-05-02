@@ -1,4 +1,4 @@
-import { HeaderWidgetProps } from '~/shared/types';
+import { HeaderWidgetProps } from "~/shared/types";
 
 const HeaderWidget = ({ header, titleClassname }: HeaderWidgetProps) => {
   const { title, subtitle, highlight, position } = header;
@@ -8,7 +8,11 @@ const HeaderWidget = ({ header, titleClassname }: HeaderWidgetProps) => {
       {(title || subtitle || highlight) && (
         <div
           className={`mb-6 max-w-3xl text-center ${
-            position === 'left' ? 'sm:text-left' : position === 'right' ? 'sm:text-right' : 'sm:text-center'
+            position === "left"
+              ? "sm:text-left"
+              : position === "right"
+              ? "sm:text-right"
+              : "sm:text-center"
           } md:mx-auto md:mb-12`}
         >
           {highlight && (
@@ -23,7 +27,11 @@ const HeaderWidget = ({ header, titleClassname }: HeaderWidgetProps) => {
               {title}
             </h2>
           )}
-          {subtitle && <p className="mx-auto mt-4 max-w-3xl text-xl text-gray-600 dark:text-slate-400">{subtitle}</p>}
+          {subtitle && (
+            <p className="mx-auto mt-4 max-w-3xl text-xl text-gray-600 dark:text-slate-400">
+              {subtitle}
+            </p>
+          )}
         </div>
       )}
     </div>
