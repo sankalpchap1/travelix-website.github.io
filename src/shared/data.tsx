@@ -778,6 +778,8 @@ export const testimonialData: TestimonialProps = {
 export const pricingData: PricingProps = {
   header: {
     title: 'Prices for each plan',
+    subtitle:
+      'Proin eget vestibulum sem, vel ultrices ligula. Vestibulum in eleifend lectus, non mollis odio. Donec nibh ipsum, suscipit non pulvinar quis, lobortis ac lorem.',
     // highlight: 'Pricing',
   },
   prices: [
@@ -786,6 +788,10 @@ export const pricingData: PricingProps = {
       value: 29,
       period: 'per month',
       texts: [
+        'Etiam in libero',
+        'Aenean ac nunc',
+        'Cras scelerisque accumsan libero, et volutpat dolor tristique at',
+        'In hac habitasse',
       ],
       link: {
         label: 'Free 7-day trial',
@@ -797,6 +803,7 @@ export const pricingData: PricingProps = {
       title: 'standard',
       value: 69,
       period: 'per month',
+      texts: ['Proin vel laoreet', 'Ut efficitur egestas', 'Pellentesque ut nibh', 'Donec fringilla sem'],
       link: {
         label: 'Free 15-day trial',
         href: '#',
@@ -808,7 +815,12 @@ export const pricingData: PricingProps = {
       title: 'premium',
       value: 199,
       period: 'per month',
-
+      texts: [
+        'Curabitur suscipit risus',
+        'Aliquam blandit malesuada',
+        'Suspendisse sit amet',
+        'Suspendisse auctor dui',
+      ],
       link: {
         label: 'Free 30-day trial',
         href: '#',
@@ -817,6 +829,48 @@ export const pricingData: PricingProps = {
     },
   ],
 };
+// export const pricingData: PricingProps = {
+//   header: {
+//     title: 'Prices for each plan',
+//     // highlight: 'Pricing',
+//   },
+//   prices: [
+//     {
+//       title: 'basic',
+//       value: 29,
+//       period: 'per month',
+//       texts: [
+//       ],
+//       link: {
+//         label: 'Free 7-day trial',
+//         href: '#',
+//       },
+//       hasRibbon: false,
+//     },
+//     {
+//       title: 'standard',
+//       value: 69,
+//       period: 'per month',
+//       link: {
+//         label: 'Free 15-day trial',
+//         href: '#',
+//       },
+//       hasRibbon: true,
+//       ribbonTitle: 'Popular',
+//     },
+//     {
+//       title: 'premium',
+//       value: 199,
+//       period: 'per month',
+
+//       link: {
+//         label: 'Free 30-day trial',
+//         href: '#',
+//       },
+//       hasRibbon: false,
+//     },
+//   ],
+// };
 
 // Comparison data
 export const comparisonData: ComparisonProps = {

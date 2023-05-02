@@ -17,7 +17,7 @@ export default function Page() {
       <Steps />
       <Testimonial />
       <FAQs2 />
-      <Pricing />
+      {/* <Pricing /> */}
     </>
   );
 }

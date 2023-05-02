@@ -1,6 +1,7 @@
-import Image from 'next/image';
+import Image from "next/image";
 import { teamData } from '~/shared/data';
 import HeaderWidget from '../common/HeaderWidget';
+import teamImage from "~/assets/images/team.jpeg";
 
 const Team = () => {
   const { header, teams } = teamData;
@@ -53,6 +54,16 @@ const Team = () => {
             ))}
           </div>
         </div>
+        <div className="relative m-auto mt-14 max-w-4xl">
+                <Image
+                  src={teamImage}
+                  width={300}
+                  height={300}
+                  alt={"Colorful Image"}
+                  sizes="(max-width: 768px) 100vw, 432px"
+                  className="mx-auto w-full rounded-lg bg-gray-500 shadow-lg"
+                />
+              </div>
       </div>
     </section>
   );
