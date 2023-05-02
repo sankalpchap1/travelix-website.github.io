@@ -195,6 +195,15 @@ interface ContentProps {
   isAfterContent?: boolean;
 }
 
+
+interface Content3Props {
+  header?: Header;
+  content?: string;
+  items?: Array<Item>;
+  isReversed?: boolean;
+  isAfterContent?: boolean;
+}
+
 interface StepsProps {
   title?: string;
   items: Array<Item>;

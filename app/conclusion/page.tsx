@@ -1,11 +1,12 @@
-import { content3Data, contentData } from '~/shared/data';
+import { content3Data, content4Data } from '~/shared/data';
 import Content from '~/components/widgets/Content';
+import Challenges from '~/components/widgets/Challenges';
 
 const Page = () => {
   return (
     <>
-      <Content {...contentData} />
-      <Content {...content3Data} />
+      <Challenges {...content3Data} />
+      <Content {...content4Data} />
     </>
   );
 };

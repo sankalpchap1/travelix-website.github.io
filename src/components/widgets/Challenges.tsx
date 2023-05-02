@@ -4,7 +4,7 @@ import { IconCheck } from '@tabler/icons-react';
 import { ContentProps } from '~/shared/types';
 import HeaderWidget from '../common/HeaderWidget';
 
-const Content = ({ header, content, items, image, isReversed, isAfterContent }: ContentProps) => (
+const Challenges = ({ header, content, items, image, isReversed, isAfterContent }: ContentProps) => (
   <section className="bg-primary-50 dark:bg-slate-800">
     <div
       className={`mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 ${isAfterContent ? 'pt-1 pb-16 md:pb-20' : 'py-16 md:py-20'}`}
@@ -12,7 +12,7 @@ const Content = ({ header, content, items, image, isReversed, isAfterContent }: 
       {header && <HeaderWidget header={header} titleClassname="text-3xl sm:text-5xl" />}
       <div className="mx-auto max-w-6xl md:px-8">
         <div className={`md:flex ${isReversed ? 'md:flex-row-reverse' : ''} md:gap-16`}>
-          <div className="self-center md:basis-1/2">
+          <div className="self-center">
             {content && <div className="mb-12 text-lg text-gray-600 dark:text-slate-400">{content}</div>}
             {items && (
               <div className="space-y-8">
@@ -34,25 +34,10 @@ const Content = ({ header, content, items, image, isReversed, isAfterContent }: 
               </div>
             )}
           </div>
-          <div aria-hidden="true" className="mt-10 md:mt-0 md:basis-1/2">
-            {image && (
-              <div className="relative m-auto max-w-4xl" style ={{paddingTop : 40}}>
-                <Image
-                  style={{maxWidth : 500}}
-                  src={image.src}
-                  // width={500}
-                  // height={500}
-                  alt={image.alt}
-                  sizes="(max-width: 768px) 100vw, 432px"
-                  className="mx-auto w-full rounded-lg bg-gray-500 shadow-lg"
-                />
-              </div>
-            )}
-          </div>
         </div>
       </div>
     </div>
   </section>
 );
 
-export default Content;
+export default Challenges;

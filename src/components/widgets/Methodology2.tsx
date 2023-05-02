@@ -1,7 +1,7 @@
 import { IconCheck } from "@tabler/icons-react";
 import HeaderWidget from "../common/HeaderWidget";
 import Image from "next/image";
-import trendingNPRImage from "~/assets/images/trending-npr.jpeg";
+import trendingNPRImage from "~/assets/images/travel2.jpg";
 
 const method2Data = {
   header: {

@@ -29,6 +29,7 @@ import {
   ComparisonProps,
   ContactProps,
   ContentProps,
+  Content3Props,
   FAQsProps,
   FeaturesProps,
   FooterProps,
@@ -47,7 +48,9 @@ import mainPage from '~/assets/images/mainpage.png';
 import gasImg from '~/assets/images/newuser.png';
 import pythonLogo from '~/assets/images/python-logo.png';
 import reactLogo from '~/assets/images/react-logo.png';
+import travelImg from '~/assets/images/travel.jpg';
 import tensorflowlogo from '~/assets/images/tensorflow.png';
+
 
 // Announcement data
 export const announcementData: AnnouncementProps = {
@@ -135,12 +138,11 @@ export const heroData: HeroProps = {
   subtitle: (
     <>
       <span className="hidden md:inline">
-        <span className="font-semibold underline decoration-primary-600 decoration-wavy decoration-1 underline-offset-2">
-          Travelix
+        <span className="font-semibold  decoration-primary-600 decoration-wavy decoration-1 underline-offset-2">TRAVELIX 
         </span>{' '}
         is a personalized travel recommendation system that provides recommendations to users based on their <em>preferences</em> and <em>travel history</em>.
       </span>{' '}
-      The tool will analyze user preferences and destination data (granular to State level) to recommend Restaurents, Hotels and Nightlife that match the user's preferences.
+      The tool will analyze user preferences and destination data (granular to State level) to recommend Restaurants, Hotels and Nightlife that match the user's preferences.
     </>
   ),
   callToAction: {
@@ -394,7 +396,7 @@ export const featuresData: FeaturesProps = {
     {
       title: 'User-friendly interface',
       description:
-        'Boasts an intuitive user interface inspired by Netflix, enabling a seamless user experience alon with live fetching of business logos from Google to enhance the visual appeal of our recommendations',
+        'Boasts an intuitive user interface inspired by Netflix, enabling a seamless user experience along with live fetching of business logos from Google to enhance the visual appeal of our recommendations',
       icon: IconRocket
     },
     {
@@ -451,7 +453,7 @@ export const contentData: ContentProps = {
   header: {
     title: 'Motivation Behind Travelix',
     subtitle: ' Need for Personalized Travel Recommendation Systems plus no existing solutions as of now gives rise to Travelix. Travelix would be useful for people who are looking for personalized travel recommendations that match their interests and budget and could be used by travel enthusiasts, families, couples, and anyone else who wants to plan a trip. Moreover, personalized recommendations help travelers discover new places and activities that they might have otherwise missed. By taking into account a user\'s travel history, Travelix can suggest destinations that the user may not have considered before, opening up new possibilities for travel experiences. Overall, the motivation behind Travelix is to create a tool that simplifies travel planning, saves time and effort, and provides personalized recommendations that help travelers make the most of their trips. Travelix aims to solve this problem by using advanced recommendation algorithms that analyze user preferences, travel history, and destination data to provide personalized travel recommendations. ',
-    highlight: 'Introduction',
+    highlight: '',
   },
   content:
     ' ',
@@ -483,7 +485,7 @@ export const contentData: ContentProps = {
 // Content2 data
 export const content2Data: ContentProps = {
   header: {
-    title: 'Introduction',
+    title: 'Big Picture',
     subtitle: ' Travelix is a personalized travel recommendation system designed to provide customized recommendations to users based on their preferences, budget, and travel history. Overall, the Travelix tool aims to simplify the process of planning a trip, providing users with personalized travel recommendations based on their interests and budget. It is a novel tool that fills a gap in the market by offering a personalized approach to travel recommendations. In this report, we will present the details of the Travelix Product, including its features, target users, the challenges encountered during development, and the methodology used to build the tool. Additionally, we will discuss the data sources used for the development of the tool and finally, we will demonstrate the usefulness of Travelix by evaluating our system and conducting user testing and providing feedback on the results obtained from the system.',
     
   },
@@ -510,38 +512,70 @@ export const content2Data: ContentProps = {
   isAfterContent: true,
 };
 
-export const content3Data: ContentProps = {
+
+// Content data
+export const content3Data: Content3Props = {
   header: {
-    title: 'Introduction',
-    subtitle: ' Travelix is a personalized travel recommendation system designed to provide customized recommendations to users based on their preferences, budget, and travel history. The tool is developed by Dream Team of 4  of the Information Storage and Retrieval course at Texas A&M University, under the guidance of Professor James Caverlee. The project aims to create a one-stop solution for travelers, allowing them to plan their itinerary efficiently and save time in researching and planning their travel arrangements. In this report, we will present the details of the Travelix tool, including its functions, target users, the challenges encountered during development, and the methodology used to build the tool. Additionally, we will discuss the data sources used for the development of the tool and provide a timeline of our project plan. Finally, we will demonstrate the usefulness of Travelix by conducting user testing and providing feedback on the results obtained from the system.',
-    
+    title: 'Challenges',
+    subtitle: '  ',
+    highlight: '',
+  },
+  content:
+    ' ',
+  items: [
+    {
+      title: 'Finding Authentic Dataset',
+      description:
+        ' Our initial plan was to incorporate various user personalized factors such as budget, user mood, time of year but there was no authentic datasets available which can cater to our needs. One way to do this was data Collection through user surveys but it would not have been scalable and time consuming. Hence, We will be using Yelp data set for helping us in building Businesses - User Ratings Matrix.',
+    },
+    {
+      title: 'High Sparsity and Huge Size of Dataset',
+      description:
+        ' Yelp Dataset was huge in size and largely sparse and getting ratings matrix involved a lot of computation power. To address these challenges we incorporated AutoEncoder Model for sparsity. To handle huge size we split the data and used parallel processing to fasten computation.',
+    },
+    {
+      title: 'Cold Start Problem',
+      description:
+        ' As dataset didn’t have any user profile data, it was difficult to address cold start problem. We tried web crawling on TripAdvisor for generating user profiles but scrapping is blocked on such sites. To address this, we developed new User interface and asked his perferences and provided recommendations accordingly. ',
+    },
+    {
+      title: 'Evaluation of System',
+      description:
+        ' As we know evaluating recommender systems is tricky, but we evaluated our recommneder systems of Matrix Factorization and Auto+Collabrative Filtering using RMSE as metric for changing epochs. Feedback through A/B testing would have really helped but is challenging. Usefulness of the tool demonstrated  by conducting user testing with travel preferences and backgrounds.',
+    },
+  ],
+  isReversed: false,
+  isAfterContent: false,
+};
+
+
+
+export const content4Data: ContentProps = {
+  header: {
+    title: 'Future Work',
+    subtitle: ' In conclusion, Travelix will be end tool for all travel needs. Now with Travelix, You will not need to go to Google flights for flight search, Trip Advisor for Hotels, Rental services website separately. Our tool will provide all things in one place hence simplifying the travel process for all users. It is a unique solution that fills the gap in the market by offering tailored travel recommendations, which are not currently provided by other platforms like TripAdvisor or Expedia. In the future, we plan to incorporate below mentioned things.  Overall, Travelix has the potential to revolutionize the way people plan and experience their travel adventures. With continued development and improvements, Travelix can become a All in One solution for all travel-related needs, providing users with personalized and unforgettable travel experiences.',   
   },
   content:
     '',
   items: [
     {
-      title: 'The tool will analyze user preferences and destination data (granular to City level) to recommend destinations and hotels that match the user\'s preferences along with complete possible itinerary such as flights, restaurants, events and attractions.. The Travelix tool analyzes user preferences and destination data, down to the city level, to provide recommendations for hotels, flights, restaurants, events, and attractions that match the user\'s interests and budget. The recommendations are generated using various recommendation techniques such as Content-Based Filtering and User-User Collaborative Filtering algorithms.',
+      title: 'Building a complete Iternary by incorporating all aspects of travel such as preferred flights, places to eat, hotels to stay, rental services etc. ',
     },
     {
-      title: 'Overall, the Travelix tool aims to simplify the process of planning a trip, providing users with personalized travel recommendations based on their interests and budget. It is a novel tool that fills a gap in the market by offering a personalized approach to travel recommendations.',
+      title: 'Incorporate various user personalized factors such as budget, user mood, time of year to provide a more personalized experience.'
     },
     {
-      title: 'Due to the sparsity of the data available which includes reviews and ratings from travelers it is difficult to build personalized recommendations for the above use case.. It can be challenging to build such a tool because it requires a large amount of data and a complex algorithm.',
+      title: 'Expanding the dataset used for generating recommendations and incorporate additional features such as weather and seasonal trends to provide more relevant and accurate recommendations.'
     },
     {
-      title: 'A User Interface similar to Netflix for Travel Needs.'
+      title: 'Building User Interface similar to Spotify asking for User perfernces to do Content Based Filtering.',
     },
     {
-      title: 'Travelix provides three different kinds of recommendations as follows : Non-personalized recommendations : Recommend trending places to visit right now, Personalized recommendations, Using Matrix Factorization, AutoEncoder (Addressing the sparsity of data) + Collaborative Filtering ',
+      title: 'Getting feedback through A/B testing as usefulness of the tool will be demonstrated by proper user testing with travel preferences and backgrounds.',
     },
-    {
-      title: 'Hence, Travelix will be a one stop solution for user’s travel needs. We are using the Yelp data set for establishing the user business ratings matrix, covering 2M users and around 150K businesses.       ',
-    },
-
-
   ],
   image: {
-    src: cameraBackImg,
+    src: travelImg,
     alt: 'Colorful Image',
   },
   isReversed: true,
@@ -904,20 +938,20 @@ export const comparisonData: ComparisonProps = {
 export const evaluationData: ContactProps = {
   header: {
     title: 'Get in Touch',
-    subtitle: 'In hac habitasse platea dictumst',
+    subtitle: 'Feel free to contact me.',
     highlight: 'Contact',
   },
   content:
-    'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis nec ipsum orci. Ut scelerisque sagittis ante, ac tincidunt sem venenatis ut.',
+    '',
   items: [
     {
       title: 'Our Address',
-      description: ['1230 Maecenas Street Donec Road', 'New York, EEUU'],
+      description: ['Texas A&M University', 'College Station, TX'],
       icon: IconMapPin,
     },
     {
       title: 'Contact',
-      description: ['Mobile: +1 (123) 456-7890', 'Mail: tailnext@gmail.com'],
+      description: ['Mobile: +1 (123) 456-7890', 'Mail: sankalpchap1@gmail.com'],
       icon: IconPhoneCall,
     },
     {
@@ -957,20 +991,20 @@ export const evaluationData: ContactProps = {
 export const contactData: ContactProps = {
   header: {
     title: 'Get in Touch',
-    subtitle: 'In hac habitasse platea dictumst',
+    subtitle: 'Feel free to contact me.',
     highlight: 'Contact',
   },
   content:
-    'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis nec ipsum orci. Ut scelerisque sagittis ante, ac tincidunt sem venenatis ut.',
+    '',
   items: [
     {
       title: 'Our Address',
-      description: ['1230 Maecenas Street Donec Road', 'New York, EEUU'],
+      description: ['Texas A&M University', 'College Station, TX'],
       icon: IconMapPin,
     },
     {
       title: 'Contact',
-      description: ['Mobile: +1 (123) 456-7890', 'Mail: tailnext@gmail.com'],
+      description: ['Mobile: +1 (123) 456-7890', 'Mail: sankalpchap1@gmail.com'],
       icon: IconPhoneCall,
     },
     {
